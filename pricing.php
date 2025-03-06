@@ -5,7 +5,7 @@ $result = $conn->query($sql);
 ?>
 <style>
     .package-heading {
-        font-weight: 600;
+        font-weight: 700;
         font-size: 34px;
     }
 </style>

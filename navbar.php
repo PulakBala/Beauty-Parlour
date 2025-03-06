@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 	<style>
         /* Make all text black except footer */
@@ -44,13 +46,48 @@
         .ftco-footer strong {
             color: #f9f3f3 !important;
         }
+
+        /* Add this to your existing styles */
+        #ftco-navbar {
+            z-index: 1001; /* Increase navbar z-index */
+        }
+        
+        .navbar-collapse {
+            z-index: 1001; /* Same z-index as navbar */
+        }
+
+        .social-icons {
+            z-index: 999; /* Decrease social icons z-index */
+        }
+
+        @media (max-width: 767px) {
+            .social-icons {
+                display: none; /* Hide social icons on mobile */
+            }
+        }
+
+        /* Add these styles for responsive logo */
+        .navbar-brand img {
+            max-height: 50px;
+            width: auto;
+            transition: all 0.3s ease;
+        }
+
+        /* Adjust logo size for mobile */
+        @media (max-width: 767px) {
+            .navbar-brand img {
+                max-height: 40px;
+            }
+        }
     </style>
   </head>
   <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.php">RUBAIYA'S</a>
+	      <a class="navbar-brand" href="index.php">
+	        <img src="images/rubiyas.jpg" alt="Rubaiya's Logo" style="height: 50px; width: auto;">
+	      </a>
 	      <button class="navbar-toggler p-1 m-0" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu text-white"></span>
 	      </button>
@@ -63,7 +100,7 @@
 	          <li class="nav-item"><a href="work.php" class="nav-link">Work</a></li>
 	          <li class="nav-item"><a href="blog.php" class="nav-link">Blog</a></li>
 	          <li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
-	          <li class="nav-item"><a href="https://maps.app.goo.gl/sGeeRDy9G1JHXYyQA?g_st=ac" class="nav-link">Location</a></li>
+	          <li class="nav-item"><a href="http://127.0.0.1:8000/admin/auth/login" class="nav-link">ADMIN</a></li>
 			</a>
 	        </ul>
 	      </div>

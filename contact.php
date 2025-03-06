@@ -1,4 +1,38 @@
 <?php include('navbar.php') ?>
+
+<style>
+	.social-icons{
+		display: flex;
+		gap:15px;
+	}
+.social-icons a {
+            width: 45px;
+            height: 45px;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            border-radius: 50%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.1);
+        }
+
+        .social-icons .facebook {
+            color: #4267B2;
+        }
+
+        .social-icons .whatsapp {
+            color: #25D366;
+        }
+		.social-icons .maps {
+        color: #EA4335; /* Google Maps red color */
+    }
+</style>
     
     <div class="hero-wrap js-fullheight" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
@@ -32,14 +66,22 @@
 		              <p><span>Address:</span> 	Chairman ghat,prabashi kallyan bank north side of road,Amin garden 4th floor, Chandpur, Bangladesh</p>
 		            </div>
 		            <div class="col-md-12 mb-3">
-		              <p><span>Phone:</span> <a href="tel://1234567920">+88 01630002921</a></p>
+		              <p><span>Phone:</span> <a href="tel://1234567920">+8801630002921</a></p>
 		            </div>
 		            <div class="col-md-12 mb-3">
 		              <p><span>Email:</span> <a href="mailto:info@yoursite.com">rubaiyanur81@gmail.com</a></p>
 		            </div>
-		            <div class="col-md-12 mb-3">
-		              <p><span>Facebook:</span> <a href="https://www.facebook.com/share/1AAZtU2ES">Click me.</a></p>
-		            </div>
+					<div class="social-icons">
+        <a href="https://www.facebook.com/profile.php?id=61573616274710&rdid=eu4zmRlHUT7dHxLo&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1AAZtUu2ES%2F#" class="facebook" target="_blank">
+            <i class="fab fa-facebook-f fa-lg"></i>
+        </a>
+        <a href="https://wa.me/+8801630002921" class="whatsapp" target="_blank">
+            <i class="fab fa-whatsapp fa-lg"></i>
+        </a>
+		<a href="https://maps.app.goo.gl/sGeeRDy9G1JHXYyQA?g_st=ac" class="maps" target="_blank">
+        <i class="fas fa-map-marker-alt fa-lg"></i> </a>
+    </div>
+    
 							</div>
 						</div>
 						<div class="col-md-1"></div>
